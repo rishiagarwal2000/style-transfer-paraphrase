@@ -42,9 +42,9 @@ dataset_dependencies = {
         "size": 8551,
         "num_classes": 2
     },
-    "cds": {
-        "size": 273372,
-        "num_classes": 11
+    "dialouge_dataset": {
+        "size":308334,
+        "num_classes": 2
     },
 }
 
@@ -55,7 +55,7 @@ other_dependencies = {
 
 hyperparameters = [
     [('base_dataset',), ["datasets"]],
-    [('dataset',), ["cds"]],
+    [('dataset',), ["dialouge_dataset"]],
     [('roberta_model',), ['LARGE']],
     [('learning_rate',), ['1e-5']],
     [('num_epochs',), [10]],
